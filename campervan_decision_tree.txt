@@ -1,0 +1,26 @@
+[D] Invest in Campervan Rental Business?
+|
+|-- Yes
+|   |
+|   |-- [C] Market Demand
+|   |   |
+|   |   |-- High (0.4)
+|   |   |   |-- [C] Weather Conditions
+|   |   |   |   |-- Favorable (0.6): Profit $200,000
+|   |   |   |   |-- Unfavorable (0.4): Profit $100,000
+|   |   |
+|   |   |-- Medium (0.4)
+|   |   |   |-- [C] Weather Conditions
+|   |   |   |   |-- Favorable (0.6): Profit $100,000
+|   |   |   |   |-- Unfavorable (0.4): Profit $50,000
+|   |   |
+|   |   |-- Low (0.2)
+|   |   |   |-- [C] Weather Conditions
+|   |   |   |   |-- Favorable (0.6): Profit $20,000
+|   |   |   |   |-- Unfavorable (0.4): Loss $30,000
+|
+|-- No
+|   |-- Profit $0 (No investment, no gain/loss)
+
+[D] = Decision Node
+[C] = Chance Node

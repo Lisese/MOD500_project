@@ -1,0 +1,47 @@
+// Campervan Rental Decision Tree
+digraph {
+	rankdir=LR
+	D1 [label="Invest in
+Campervan Rental?" shape=square]
+	C1 [label="Market
+Demand" shape=circle]
+	D1 -> C1 [label=Yes]
+	C2_0 [label="Weather
+Conditions" shape=circle]
+	C1 -> C2_0 [label="High
+(0.4)"]
+	O_0_0 [label="Profit
+$200,000" shape=plaintext]
+	C2_0 -> O_0_0 [label="Favorable
+(0.6)"]
+	O_0_1 [label="Profit
+$100,000" shape=plaintext]
+	C2_0 -> O_0_1 [label="Unfavorable
+(0.4)"]
+	C2_1 [label="Weather
+Conditions" shape=circle]
+	C1 -> C2_1 [label="Medium
+(0.4)"]
+	O_1_0 [label="Profit
+$100,000" shape=plaintext]
+	C2_1 -> O_1_0 [label="Favorable
+(0.6)"]
+	O_1_1 [label="Profit
+$50,000" shape=plaintext]
+	C2_1 -> O_1_1 [label="Unfavorable
+(0.4)"]
+	C2_2 [label="Weather
+Conditions" shape=circle]
+	C1 -> C2_2 [label="Low
+(0.2)"]
+	O_2_0 [label="Profit
+$20,000" shape=plaintext]
+	C2_2 -> O_2_0 [label="Favorable
+(0.6)"]
+	O_2_1 [label="Profit
+$-30,000" shape=plaintext]
+	C2_2 -> O_2_1 [label="Unfavorable
+(0.4)"]
+	O_no [label="Profit $0" shape=plaintext]
+	D1 -> O_no [label=No]
+}

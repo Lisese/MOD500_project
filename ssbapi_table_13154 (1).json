@@ -1,0 +1,27 @@
+{"queryObj":{
+  "query": [
+    {
+      "code": "Region",
+      "selection": {
+        "filter": "vs:ReiselivsRegioner",
+        "values": [
+          "11103"
+        ]
+      }
+    },
+    {
+      "code": "Landkoder2",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "00000",
+          "000",
+          "ccc"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "json-stat2"
+  }
+},"tableIdForQuery":"13154","postUrl":"https://data.ssb.no/api/v0/en/table/13154"}

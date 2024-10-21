@@ -1,0 +1,21 @@
+[Decision]
+Invest in Campervan Rental Business
+
+[Chance Nodes]
+Market Demand
+Weather Conditions
+Operational Costs
+Competition
+
+[Value Node]
+Profitability
+
+[Relationships]
+Invest in Campervan Rental Business -> Profitability
+Market Demand -> Profitability
+Weather Conditions -> Profitability
+Operational Costs -> Profitability
+Competition -> Profitability
+Market Demand -> Operational Costs
+Weather Conditions -> Operational Costs
+Competition -> Market Demand
